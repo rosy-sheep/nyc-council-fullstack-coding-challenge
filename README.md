@@ -1,5 +1,5 @@
 # New York City Council Full Stack Coding Challenge
-You will have **1 full week** to complete this challenge starting when you received the challenge from our office. You can submit your challenge using our [Google Form](https://forms.gle/HXCXFiVvFAJ3WzAc7).
+This is my attempt at completing the coding challenge including the bonus parts.
 
 ## The Task
 NYC’s 51 Council Members want a dashboard application that shows the complaints being made in their respective district. The backend will be a Django RESTful API and a React frontend that makes API calls to the backend endpoints.
