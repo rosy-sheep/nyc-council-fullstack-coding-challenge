@@ -1,3 +1,7 @@
+* {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 .App {
   text-align: center;
 }
@@ -19,4 +23,41 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+
+.site-header {
+  /* font-size: 1.125rem;
+  line-height: 2.25rem;
+  letter-spacing: -.03rem; */
+  /* font-weight: 400; */
+  color: #2f56a6;
+  padding: .9125rem 1rem;
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.site-content {
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media print,screen and (min-width:40em) {
+  .site-header {
+    font-size: 1.575rem;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .site-header {
+    line-height: 3.625rem;
+  }
 }

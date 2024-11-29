@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+// App.js
+import React, { useState } from 'react';
 import './App.css';
+import LoginPage from './LoginPage';
+import DashboardPage from './DashboardPage';
 
-function App() {
+const App = () => {
+  const [token, setToken] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="site-header">
+        <h1>NYC Council Complaints</h1>
       </header>
+      <main id="main">
+        <div className="site-content">
+          {token ? (
+            <DashboardPage token={token} />
+          ) : (
+            <LoginPage setToken={setToken} />
+          )}
+        </div>
+      </main>
+      
     </div>
   );
-}
+};
 
 export default App;
